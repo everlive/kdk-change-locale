@@ -25,12 +25,12 @@ add_filter('locale', 'kdk_set_locale', 10);
 function kdk_set_locale($locale)
 {
 		$current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-		$is_english  = strpos( $current_url , "/en");
-		$is_german   = strpos( $current_url , "/de");
-		$is_greek 	 = strpos( $current_url , "/el");
-		$is_spanish  = strpos( $current_url , "/es");
-		$is_russian	 = strpos( $current_url , "/ru");
-		$is_turkish	 = strpos( $current_url , "/tr");
+		$is_english  = strpos( $current_url , "/en/");
+		$is_german   = strpos( $current_url , "/de/");
+		$is_greek 	 = strpos( $current_url , "/el/");
+		$is_spanish  = strpos( $current_url , "/es/");
+		$is_russian	 = strpos( $current_url , "/ru/");
+		$is_turkish	 = strpos( $current_url , "/tr/");
 
 		if ( !is_admin() )
 		{
